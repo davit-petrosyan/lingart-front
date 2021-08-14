@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./assets/styles/fonts/style.css');
+
+@font-face {
+  font-family: Petit Formal Script;
+  src: url('assets/fonts/Petit_Formal_Script/PetitFormalScript-Regular.ttf') format("opentype");
+}
+
+html,body{
+  height: 100%;
+}
+body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Petit Formal Script;
+}
+.container{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}

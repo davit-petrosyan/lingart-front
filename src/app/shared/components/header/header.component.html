@@ -1,0 +1,30 @@
+<header>
+  <img class="logo" src="../../../../assets/images/logo.svg" alt="">
+  <ng-container *ngIf="info$ | async as i">
+    <p > {{ i.address  }}</p>
+    <p> Tel: {{i.email }}</p>
+    <p > Email: {{i.tell }}</p>
+  </ng-container>
+
+</header>
+<nav class="container">
+  <span (click)="menuToggled()" *ngIf="menuToggle" class="icon icon-close"></span>
+  <span (click)="menuToggled()" *ngIf="!menuToggle" class="icon icon-menu"></span>
+  <span class="icon icon-lang"></span>
+  <span class="text">En</span>
+</nav>
+<aside [ngClass]="{'fade-out' : !menuToggle , 'slide-in-left' : menuToggle}"   >
+  <p>Applications</p>
+  <p>Computer Studies</p>
+  <p>Languages</p>
+  <p>Testes</p>
+  <p>Movie Watching</p>
+  <p>Library</p>
+  <p>Private School Lessons</p>
+  <p>IELTS</p>
+  <p>Translations</p>
+  <p>Xerox/Typing</p>
+  <p>Summer School</p>
+  <p>English</p>
+</aside>
+
